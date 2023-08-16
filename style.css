@@ -1,0 +1,53 @@
+:root{
+    --darkblue: hsl(234, 29%, 20%);
+    --background : hsl(235, 18%, 26%);
+}
+
+body{
+    background-color: var(--background);
+    
+
+}
+
+section{
+    width: 100%;
+    height: 100%;
+} 
+
+.card{
+    width: 90%;
+    height: 500px;
+    background-color: #fff;
+    max-width: 700px;
+    margin: 150px auto 0 auto;
+    border-radius: 30px;
+    display: flex;
+
+}
+
+.div-left, .div-right{
+    width: 50%;
+    height: 100%;
+
+}
+
+.div-right{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.content-right{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    border-radius: 10px;
+   
+}
+
+
