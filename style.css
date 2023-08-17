@@ -1,6 +1,17 @@
 :root{
     --darkblue: hsl(234, 29%, 20%);
     --background : hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%)
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(./assets/fonts/Roboto-Regular.ttf);
 }
 
 body{
@@ -15,10 +26,10 @@ section{
 } 
 
 .card{
-    width: 90%;
-    height: 500px;
+    width: 95%;
+    height: 550px;
     background-color: #fff;
-    max-width: 700px;
+    max-width: 750px;
     margin: 150px auto 0 auto;
     border-radius: 30px;
     display: flex;
@@ -29,6 +40,11 @@ section{
     width: 50%;
     height: 100%;
 
+}
+
+.div-left{
+    display: flex;
+    align-items: center;
 }
 
 .div-right{
@@ -50,4 +66,89 @@ section{
    
 }
 
+.content-left{
+    width: 90%;
+    height: 80%;
+    margin: 0 auto 0 40px;
+}
 
+.content-left h1{
+    color: var(--darkblue);
+    font-size: 48px;
+    font-family: "Roboto Bold";
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content-left ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.content-left p{
+    font-family: 'Roboto Regular';
+    font-size: 14px;
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+.content-left ul li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+
+.content-left ul li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.content-left form{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.content-left form label{
+    font-size: 12px;
+    font-family: "Roboto Bold";
+    font-weight: 500;
+    color: var(--darkblue);
+}
+
+.content-left form input{
+    width: 85%;
+    height: 45px;
+    margin-top: 10px;
+    padding: 0 0 0 20px;
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    color: var(--grey);
+}
+
+
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    max-width: 308px;
+    border: none;
+    height: 45px;
+    background-color: var(--darkblue);
+    color: #fff;
+    border-radius: 8px;
+    font-family: 'Roboto Bold';
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(hsl(342, 100%, 60%), #fe6a3b);;
+}
