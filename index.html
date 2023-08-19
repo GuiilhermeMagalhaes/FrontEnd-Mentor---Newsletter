@@ -10,7 +10,11 @@
 <body>
 
   <section>
-    <div class="card">
+    <div class="content1" id="content1">
+      <div class="card" id="card">
+      <div class="div-img-mobile">
+       <!-- <img src="./assets/images/illustration-sign-up-mobile.svg" alt="img mobile" class="img-mobile">-->
+      </div>
       <div class="div-left">
         <div class="content-left">
           <h1 class="">Stay updated!</h1>
@@ -22,16 +26,28 @@
           </ul>
           <div class="div-form">
           <form>
-            <label for="email">Email address</label>
+            <label style="display: flex; justify-content: space-between;" for="email">Email address <span id="error">Valid email required</span></label>
             <input id="email" type="email" name="email" placeholder="email@company.com">
           </form>
-          <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+          <button type="submit" class="btn" onclick="enviar()">Subscribe to monthly newsletter</button>
         </div>
         </div>
       </div>
       <div class="div-right">
         <div class="content-right">
           <!--<img src="./assets/images/illustration-sign-up-desktop.svg" alt="image" class="img">  -->
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">
+      <div class="card-sucess" id="card-sucess">
+        <div class="sucess-content">
+          <img src="./assets/images/icon-success.svg" alt="img sucess" class="img-sucess">
+          <h1>Thanks for subscribing!</h1>
+          <p>A confirmation has ben sent to <span>ash@loremcomponay.com.</span>Please open and click the button inside to confirm your subscription</p>
+          <button class="btn2" onclick="voltar()">Dismiss message</button>
         </div>
       </div>
     </div>

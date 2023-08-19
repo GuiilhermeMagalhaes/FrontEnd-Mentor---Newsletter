@@ -22,8 +22,13 @@ body{
 
 section{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 } 
+
+.content1{
+    width: 100%;
+    height: 100vh;
+}
 
 .card{
     width: 95%;
@@ -112,9 +117,14 @@ section{
     margin-right: 10px;
 }
 
+.div-form{
+    width: 100%;
+}
+
 .content-left form{
     width: 100%;
     margin-top: 40px;
+    max-width: 301px;
 }
 
 .content-left form label{
@@ -125,21 +135,23 @@ section{
 }
 
 .content-left form input{
-    width: 85%;
+    width: 100%;
     height: 45px;
     margin-top: 10px;
     padding: 0 0 0 20px;
     border: 1px solid var(--grey);
     border-radius: 8px;
     color: var(--grey);
+    box-sizing: border-box; 
+    outline: none;
 }
 
 
 .btn{
     margin-top: 20px;
     width: 100%;
+    max-width: 301.5px;
     text-align: center;
-    max-width: 308px;
     border: none;
     height: 45px;
     background-color: var(--darkblue);
@@ -151,4 +163,255 @@ section{
 
 .btn:hover{
     background: linear-gradient(hsl(342, 100%, 60%), #fe6a3b);;
+}
+
+.div-img-mobile{
+    display: none;
+}
+
+#error{
+    color: red;
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 756px){
+    .content-left ul li{
+        font-size: 13px;
+    }
+}
+
+
+
+@media only screen and (max-width: 724px){
+    .content-left h1{
+        font-size: 46px;
+    }
+}
+
+
+@media only screen and (max-width: 698px){
+    .content-left h1{
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width: 672px){
+    .content-left h1{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 645px){
+    .content-left h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 634px){
+    .btn{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 625px){
+    .content-left p{
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 620px){
+    .div-right{
+        display: none;
+    }
+
+    .div-left{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .content-left{
+        height: 85%;
+        margin: 0 auto;
+    }
+
+    .content-left h1{
+        margin-top: 0;
+    }
+
+    .card{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        flex-direction: column;
+        
+    }
+
+    .div-img-mobile{
+        display: block;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .content-left form{
+        width: 100%;
+        margin-top: 40px;
+        max-width: 441.52px;
+    }
+   
+
+    .div-form{
+        width: 100%;
+        max-width: 441.44px;
+    }
+
+    .div-form input{
+        width: 95%;
+        max-width: 441.52px;
+    }
+
+   .div-form .btn{
+        width: 100%;
+        max-width: none;
+        font-size: 13px;
+        max-width: 441.52px;
+   }
+
+   
+
+    /*.img-mobile{
+        width: 100%;
+    }*/
+}
+
+
+@media only screen and (max-width: 430px){
+
+
+   .div-left{
+    width: 95%;
+   }
+   .content-left{
+    margin: 0 auto;
+   }
+}
+
+
+/* Card Sucess*/
+
+.toast{
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.card-sucess{
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    background-color: #fff;
+    margin: 200px auto 0 auto;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.sucess-content{
+    width: 75%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.img-sucess{
+    width: 45px;
+    height: 45px;
+}
+
+.sucess-content h1{
+    color: var(--darkblue);
+    font-size: 38px;
+    font-family: "Roboto Bold";
+    font-weight: 900;
+    margin: 15px 0 0 0;
+}
+
+.sucess-content p{
+    font-size: 12px;
+    color: var(--darkblue);
+    font: 500;
+    font-family: 'Roboto Regular';
+    line-height: 18px;
+}
+
+.sucess-content p span{
+    font-family: 'Roboto Bold';
+    color: var(--darkblue);
+
+}
+
+.sucess-content .btn2{
+    width: 100%;
+    margin: 10px auto 0 auto;
+    height: 38px;
+    background-color: var(--darkblue);
+    color: #Fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+.sucess-content .btn2:hover{
+    background: linear-gradient(hsl(342, 100%, 60%), #fe6a3b);;
+}
+
+@media only screen and (max-width:384px){
+    .card-sucess{
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    .sucess-content{
+        width: 87%;
+        padding-top: 80px;
+        position: relative;
+
+    }
+
+    .img-sucess{
+        width: 65px;
+        height: 65px;
+    }
+    
+    .sucess-content h1{
+        margin-top: 25px;
+    }
+
+    .sucess-content p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .sucess-content .btn2{
+        font-size: 14px;
+        font-family: 'Roboto Regular';
+        font-weight: 500;
+        height: 45px;
+        position:absolute;
+        bottom: 10px;
+    }
 }
